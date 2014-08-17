@@ -1,0 +1,156 @@
+/*
+Theme Name: Eternal Chain
+Theme URI: http://moe.akibarika.org
+Author: Rika Akiba
+Author URI: http://moe.akibarika.org
+Description: Eric Li's site
+Version: alpha
+License: CC BY-NC-SA 3.0
+*/
+
+/* reset */
+*, *:after, *::before {
+  margin:0;
+  padding:0;
+  border:none;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  text-shadow:0px 0px 1px rgba(0,0,0,0.1);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+body {
+  font-size:1em;
+  position:relative;
+  font-family:"Raleway", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei",sans-serif;
+  color:#111;
+  z-index:0;
+  overflow-x:hidden;
+  background-color:#fff;
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+  display:block;
+}
+a {
+  text-decoration:none;
+  color:#333;
+  cursor:pointer;
+}
+a:hover {
+  color:#F55B5D;
+}
+.clear {
+  clear:both;
+  &::before,
+  &::after {
+    content:"";
+    display:table;
+  }
+}
+.cf {
+  zoom:1;
+  &::after {
+    clear:both;
+  }
+}
+.none {
+  display:none;
+}
+::-moz-selection,::-moz-selection {
+  background:#3F3F3F;
+  color:#fff;
+  text-shadow:0 -1px 0 #333;
+}
+::-moz-selection,::selection {
+  background:#3F3F3F;
+  color:#fff;
+  text-shadow:0 -1px 0 #333;
+}
+.left {
+  float:left;
+}
+.right {
+  float:right;
+}
+input,textarea {
+  font-family:"raleway", "Helvetica Neue", Helvetica, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei",sans-serif;
+  font-size:16px;
+  color:#999;
+}
+/* header */
+header {
+  position: relative;
+  border-top: 10px solid #333;
+  .header {
+    border-top: 3px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    height: 100px;
+    .wrap-header {
+      margin: 0 auto;
+      width: 960px;
+      .logo {
+        margin-left: 9px;
+        padding-top: 18px;
+        span {
+          font-size: 45px;
+          font-weight: 200;
+          letter-spacing: -1px;
+        }
+        span.sub {
+          display: block;
+          color: #666;
+          font-size: 18px;
+          font-weight: 300;
+          margin-left: 60px;
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+}
+/* content  */
+section.content {
+  margin: 0 auto;
+  padding-bottom: 40px;
+  width: 960px;
+  .search-title {
+    color: #555555;
+    font-size: 16px;
+    margin-left: 100px;
+    padding-top: 40px;
+  }
+  .big-search {
+    margin: 0 auto;
+    width: 710px;
+    .search-bar {
+      height: 70px;
+      padding-top: 18px;
+      .search-box {
+        background: none repeat scroll 0 0 #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        color: #333;
+        font-size: 16px;
+        height: 32px;
+        line-height: 32px;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 580px;
+      }
+    }
+    .wrap-search-button {
+      height: 70px;
+      margin-left: 8px;
+      padding-top: 17px;
+      .search-button {
+        border: 1px solid #626262;
+        border-radius: 4px;
+        background-color: #626262;
+        color: #fff;
+        cursor: pointer;
+        height: 32px;
+        width: 88px;
+      }
+    }
+  }
+}
