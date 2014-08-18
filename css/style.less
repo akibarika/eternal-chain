@@ -108,6 +108,13 @@ input,textarea {
   font-size:16px;
   color:#999;
 }
+.transition (@val,@time,@pro) {
+  -moz-transition: @val @time @pro;
+  -ms-transition: @val @time @pro;
+  -webkit-transition: @val @time @pro;
+  -o-transition: @val @time @pro;
+  transition:@val @time @pro;
+}
 /* header */
 header {
   position: relative;
@@ -187,6 +194,12 @@ section.content {
           cursor: pointer;
           height: 32px;
           width: 88px;
+          .transition(all,.3s,ease);
+          &:hover {
+            -moz-box-shadow: 0 0 2px rgba(0,0,0,0.7);
+            -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.7);
+            box-shadow: 0 0 2px rgba(0,0,0,0.7);
+          }
         }
       }
     }
@@ -195,7 +208,7 @@ section.content {
     width: 100%;
     height: auto;
     overflow: hidden;
-    padding: 0 0 0 58px;
+    padding: 0 24px 0 24px;
     .list-title {
       color: #333;
       font-size: 18px;
@@ -206,11 +219,32 @@ section.content {
         border: 1px solid #ddd;
         border-radius: 5px;
         li {
+          cursor: pointer;
           list-style: none outside none;
           padding: 15px 5px 15px 5px;
           margin: 0 5px;
           border-bottom: 1px solid #eaeaea;
           position: relative;
+          &.cat-item {
+            font-size: 14px;
+            color: #bfbfbf;
+            .transition(color,.2s,ease);
+            &:hover {
+              color: #333;
+            }
+            a {
+              font-size: 14px;
+              color: #19CAAD;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+          &:hover {
+            time {
+              color: #333;
+            }
+          }
           &:last-child {
             border-bottom: none;
           }
@@ -235,6 +269,7 @@ section.content {
             top: 0;
             line-height: 50px;
             font-size: 14px;
+            .transition(color,.25s,ease);
           }
         }
       }
