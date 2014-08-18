@@ -39,20 +39,54 @@
         </div>
     </header>
     <section class="content clear">
-        <div class="search-title">
-            Search for the name or tag or guitarist of a your favorite guitar song here.
+        <div class="wrap-search">
+            <div class="search-title">
+                Search for the name or tag or guitarist or even band name of one your favorite guitar song here.
+            </div>
+            <div class="big-search">
+                <form action="<?php bloginfo ('url');?>" method="get" role="search">
+                    <div class="search-bar left">
+                        <input class="search-box" type="text" value="" name="s">
+                    </div>
+                    <div class="wrap-search-button left">
+                        <button class="search-button" type="submit" value="">Search</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="big-search">
-            <form action="<?php bloginfo ('url');?>" method="get" role="search">
-                <div class="search-bar left">
-                    <input class="search-box" type="text" value="" name="s">
-                </div>
-                <div class="wrap-search-button left">
-                    <button class="search-button" type="submit" value="">Search</button>
-                </div>
-            </form>
+        <div class="wrap-list">
+            <div class="list-title">Most recent guitar tabs:</div>
+            <div class="list-content">
+                <ul>
+                    <li class="cf">
+                        <span><a class="author"><span class="icon-user"></span> Katzenjammer</a> - <a class="song"><span class="icon-music"></span>Shepherds Song chords</a></span>
+                        <time>06 May, 2014</time>
+                    </li>
+                    <li class="cf">
+                        <span><a class="author" ><span class="icon-user"></span> Tigers Jaw</a> - <a class="song" ><span class="icon-music"></span>The Sun tab</a></span>
+                        <time>05 May, 2014</time>
+                    </li>
+                    <li class="cf">
+                        <span><a class="author" ><span class="icon-user"></span> Muse</a> - <a class="song" ><span class="icon-music"></span>City Of Delusion chords</a></span>
+                        <time>04 May, 2014</time>
+                    </li>
+                    <li class="cf">
+                        <span><a class="author" ><span class="icon-user"></span>Gary Barlow</a> - <a class="song" ><span class="icon-music"></span>Since I Saw You Last chords</a></span>
+                        <time>03 May, 2014</time>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
+    <footer class="clear">
+        <section class="footer">
+            <a>About us</a> | <a>Contact us</a> | <a>Guitar tutorial</a> | <a>Buying guitar</a>
+            <div class="cp">
+                copyright at akibarika.org
+            </div>
+        </section>
+
+    </footer>
 
 </body>
 
