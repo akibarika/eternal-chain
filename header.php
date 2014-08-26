@@ -29,16 +29,16 @@
 <body>
 <header>
     <div class="header">
-        <div class="wrap-header clear">
-            <div class="logo left clear">
-                <span>Eternal Chain</span>
-                <span class="sub clear">Easily find your favorite guitar tab.</span>
+        <div class="wrap-header cf">
+            <div class="logo left cf">
+                <a href="<?php echo home_url(); ?>"><span>GOGO <span>Guitar</span></span></a>
+                <span class="sub cf">Easily find your favorite guitar tab.</span>
             </div>
 
         </div>
     </div>
 </header>
-<section class="content clear">
+<section class="content cf">
     <div class="wrap-search">
         <div class="search-title">
             Search for the name or tag or guitarist or even band name of one your favorite guitar song here.

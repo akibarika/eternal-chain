@@ -6,22 +6,6 @@
  * Des: here is the category page
  */
 get_header(); ?>
-<section class="content clear">
-    <div class="wrap-search">
-        <div class="search-title">
-            Search for the name or tag or guitarist or even band name of one your favorite guitar song here.
-        </div>
-        <div class="big-search">
-            <form action="<?php bloginfo ('url');?>" method="get" role="search">
-                <div class="search-bar left">
-                    <input class="search-box" type="text" value="" name="s">
-                </div>
-                <div class="wrap-search-button left">
-                    <button class="search-button" type="submit" value="">Search</button>
-                </div>
-            </form>
-        </div>
-    </div>
     <div class="wrap-list">
         <?php if (!category_has_children()) {
             if (have_posts()) :
